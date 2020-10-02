@@ -7,15 +7,27 @@ function randombg(){
     var b = randomNumber(0, 255);
     var c = randomNumber(0, 255);
     var halfsum= (a+b+c)/2;
-    console.log(halfsum);
+    var background="rgb("+ a + ", " + b + ", " + c + ")";
+
     if(halfsum>=325){
-        document.getElementById("bg").style.color=("#1e1e1e");
-        document.getElementById("button").style.boxShadow=("5px 5px 15px #acacacaa");
+        var bglist = document.querySelectorAll(".rand_back");
+        var i;
+        for (i = 0; i < bglist.length; i++) {
+            bglist[i].style.color = ("#1e1e1e");
+        }
+            document.getElementById("button").style.boxShadow=("5px 5px 15px #acacacaa");
     }
     else{
-        document.getElementById("bg").style.color=("#fcfcfc");
+        var bglist = document.querySelectorAll(".rand_back");
+        var i;
+        for (i = 0; i < bglist.length; i++) {
+            bglist[i].style.color = ("#fcfcfc");
+        }    
     }
-    var background="rgb("+ a + ", " + b + ", " + c + ")"
-    console.log(background);
-    document.getElementById("bg").style.backgroundColor=background;
+
+    var bglist = document.querySelectorAll(".rand_back");
+    var i;
+    for (i = 0; i < bglist.length; i++) {
+        bglist[i].style.backgroundColor = background;
+    }
 }
