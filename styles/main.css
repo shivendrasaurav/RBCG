@@ -1,0 +1,35 @@
+body {
+  height: 88vh;
+  padding: 20px;
+  padding-top: 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+body h1 {
+  font-size: 42px;
+  font-family: 'Product Sans';
+  font-weight: normal;
+}
+
+body h2 {
+  font-size: 28px;
+  font-family: 'Product Sans';
+  font-weight: normal;
+}
+
+body button {
+  display: block;
+  margin: auto;
+  font-size: 20px;
+  font-family: 'Product Sans';
+  font-weight: normal;
+  padding: 16px 20px;
+  position: relative;
+  top: 80px;
+  outline: none;
+  border: none;
+  background: #fafafa;
+  border-radius: 6px;
+}
+/*# sourceMappingURL=main.css.map */
