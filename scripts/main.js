@@ -9,7 +9,7 @@ function randombg(){
     var sum= a+b+c;
     var background="rgb("+ a + ", " + b + ", " + c + ")";
 
-    if(sum>=450){
+    if(sum>=455){
         var bglist = document.querySelectorAll(".rand_back");
         var i;
         for (i = 0; i < bglist.length; i++) {
