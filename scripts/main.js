@@ -31,3 +31,11 @@ function randombg(){
         bglist[i].style.backgroundColor = background;
     }
 }
+
+function closemodal(){
+    var modlist = document.querySelectorAll(".modal");
+    var i;
+    for (i = 0; i < modlist.length; i++) {
+        modlist[i].removeAttribute("open");
+    }
+}

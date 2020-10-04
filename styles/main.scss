@@ -26,9 +26,69 @@ body{
         padding: 16px 20px;
         position: relative;
         top: 6vh;
-        outline: none;
         border: none;
         background: #fafafa;
         border-radius: 6px;
     }
+
+    button:active{
+        background: #eaeaea;
+    }
+
+    .modal{
+        
+        summary{
+            display: block;
+            margin: auto;
+            font-size: 20px;
+            font-family: 'Product Sans';
+            font-weight: normal;
+            padding: 16px 10px;
+            position: relative;
+            top: 6vh;
+            border: none;
+            background: #0e0e0e;
+            color: #fcfcfc;
+            border-radius: 6px;     
+            max-width: 280px;
+
+            &::-webkit-details-marker{
+                display: none;
+            }
+
+            &:active{
+                outline: none;
+                background: #1e1e1e;
+            }
+        }
+
+        .modal_container{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background: #fcfcfc;
+            width: 100vw;
+            height: 100vh;
+            color: #1e1e1e;
+            font-family: 'Product Sans';
+    
+            .modal_content{
+                width: 80vw;
+                height: 60vh;
+                display: block;
+                margin: auto;
+                margin-top: 20vh;
+                box-shadow: 6px 6px 18px #acacacac;
+                background: #dedefe;
+                color: #1e1e1e;
+                padding: 10px;
+                border-radius: 10px;
+            }    
+        }
+    }
+}
+
+*{
+    outline: none;
+    box-sizing: border-box;
 }
