@@ -6,15 +6,13 @@ body {
   overflow: hidden;
 }
 
-body h1 {
-  font-size: 36px;
-  font-family: 'Product Sans';
+body h3 {
+  font-size: 32px;
   font-weight: normal;
 }
 
-body h2 {
+body h4 {
   font-size: 24px;
-  font-family: 'Product Sans';
   font-weight: normal;
 }
 
@@ -30,6 +28,11 @@ body button {
   border: none;
   background: #fafafa;
   border-radius: 6px;
+}
+
+body button span {
+  font-size: 12px;
+  display: block;
 }
 
 body button:active {
@@ -90,5 +93,6 @@ body .modal .modal_container .modal_content {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Product Sans";
 }
 /*# sourceMappingURL=main.css.map */

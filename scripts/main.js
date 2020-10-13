@@ -1,3 +1,5 @@
+var final_hex;
+
 function randomNumber(min, max) {  
     return Math.random() * (max - min) + min; 
 }
@@ -31,13 +33,17 @@ function randombg(){
     console.log(hex);
     console.log(background);
 
+    final_hex=hex;
+    console.log(final_hex);
+
+    document.getElementById("hex").innerHTML=hex + "<span>Click to copy Hex Code</span>";
+
     if(sum>=455){
         var bglist = document.querySelectorAll(".rand_back");
         var i;
         for (i = 0; i < bglist.length; i++) {
             bglist[i].style.color = ("#1e1e1e");
         }
-        document.getElementById("button").style.boxShadow=("5px 5px 15px #acacacaa");
     }
     else{
         var bglist = document.querySelectorAll(".rand_back");
@@ -60,4 +66,17 @@ function closemodal(){
     for (i = 0; i < modlist.length; i++) {
         modlist[i].removeAttribute("open");
     }
+}
+
+function copy(){
+    const el = document.createElement('textarea');
+    el.value = final_hex;
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    console.log("copied to clipboard");
 }

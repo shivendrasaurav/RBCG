@@ -5,15 +5,12 @@ body{
     text-align: center;
     overflow: hidden;
 
-    h1{
-        font-size: 36px;
-        font-family: 'Product Sans';
+    h3{
+        font-size: 32px;
         font-weight: normal;
     }
-
-    h2{
+    h4{
         font-size: 24px;
-        font-family: 'Product Sans';
         font-weight: normal;
     }
 
@@ -29,6 +26,11 @@ body{
         border: none;
         background: #fafafa;
         border-radius: 6px;
+
+        span{
+            font-size: 12px;
+            display: block;
+        }
     }
 
     button:active{
@@ -91,4 +93,5 @@ body{
 *{
     outline: none;
     box-sizing: border-box;
+    font-family: "Product Sans";
 }
