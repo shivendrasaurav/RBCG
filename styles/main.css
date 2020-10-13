@@ -89,6 +89,19 @@ body .modal .modal_container .modal_content {
   border-radius: 10px;
 }
 
+body #snackbar {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: #fcfcfcac;
+  color: #000000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  -webkit-backdrop-filter: blur(90px);
+          backdrop-filter: blur(90px);
+  display: none;
+}
+
 * {
   outline: none;
   -webkit-box-sizing: border-box;

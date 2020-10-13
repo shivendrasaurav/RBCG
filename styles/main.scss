@@ -88,6 +88,19 @@ body{
             }    
         }
     }
+
+    #snackbar{
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        background: #fcfcfcac;
+        color: #000000;
+        padding: 8px 16px;
+        border-radius: 4px;
+        backdrop-filter: blur(90px);
+        display: none;
+    }
+
 }
 
 *{

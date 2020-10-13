@@ -69,6 +69,7 @@ function closemodal(){
 }
 
 function copy(){
+    document.getElementById("snackbar").style.display=("block");
     const el = document.createElement('textarea');
     el.value = final_hex;
     el.setAttribute('readonly', '');
@@ -79,4 +80,9 @@ function copy(){
     document.execCommand('copy');
     document.body.removeChild(el);
     console.log("copied to clipboard");
+    setTimeout(hidesnack, 2000);
+}
+
+function hidesnack(){
+    document.getElementById("snackbar").style.display=("none");
 }
